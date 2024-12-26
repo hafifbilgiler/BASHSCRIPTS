@@ -107,7 +107,7 @@ do
         1)
          COUNT=1
          for CLUSTER_NAME in  "${cluster_api_address[@]}"; do
-            if [[ $CLUSTER_NAME == *"gbpaas-t"* ]]; then
+            if [[ $CLUSTER_NAME == *"******"* ]]; then
               CLS_NAME=$(echo $CLUSTER_NAME | awk -F[/.] '{print $3}')
               echo -e "     $COUNT-) $YELLOW $CLS_NAME $NOCOLOR"
             else
